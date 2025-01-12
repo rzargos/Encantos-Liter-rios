@@ -46,3 +46,7 @@
 html {
     font-family: 'Raleway', sans-serif;
 }
+
+.hero-background {
+    background-image: url(../assets/images/hero-background.png);
+}

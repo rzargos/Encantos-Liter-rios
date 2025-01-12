@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5rem 10rem;
+    margin-inline: auto;
+
+    & a img {
+        width: 14.375rem;
+        height: 3.625rem;
+    }
+
+    & button {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+
+        color: var(--text-title);
+        background-color: var(--pink-dark);
+
+        height: 2rem;
+        padding: 1.25rem;
+        border-radius: .5rem;
+        border: none;
+
+        font: var(--button) var(--ff-base);
+
+        &:hover {
+            background-color: var(--pink-base);
+        }
+    }
+
+}
