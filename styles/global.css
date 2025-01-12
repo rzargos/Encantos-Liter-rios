@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -45,8 +47,20 @@
 
 html {
     font-family: 'Raleway', sans-serif;
+    background: linear-gradient(180deg, #3f0f41 0%, #00050A 100%);
+
 }
 
 .hero-background {
-    background-image: url(../assets/images/hero-background.png);
+    background: url(../assets/images/hero-background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 59.25rem;
+    width: 100%;
+}
+
+h1 {
+    font: var(--title-lg) var(--ff-base);
+    color: var(--text-title);
+    margin-top: 6.75rem;
 }

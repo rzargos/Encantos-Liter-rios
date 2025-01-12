@@ -1,0 +1,60 @@
+section.hero {
+    width: 41rem;
+
+    margin-inline: auto;
+    text-align: center;
+
+    & p {
+        font: var(--body-lg) var(--ff-base);
+        color: var(--text-body);
+        margin-top: 2rem;
+    }
+}
+
+.info {
+    padding: 6rem 7.5rem 5rem 7.5rem;
+
+    & div.info-image {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        img {
+            margin: 0;
+        }
+
+        img:nth-of-type(1) {
+            transform: rotate(100deg);
+            width: 5rem;
+            height: 5rem;
+        }
+
+        img:nth-of-type(2) {
+            transform: rotate(-14.5deg);
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+    }
+
+    & img {
+        display: flex;
+
+        &:nth-of-type(1) {
+            margin-inline: auto;
+            transform: rotate(20deg);
+            width: 5.5rem;
+            height: 5.5rem;
+        }
+    }
+
+
+    & span {
+        color: var(--blue-light);
+        font-weight: bold;
+    }
+
+    & p {
+        font: var(--subtitle) var(--ff-base);
+        color: var(--text-body);
+    }
+}
