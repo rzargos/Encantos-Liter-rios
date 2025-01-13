@@ -27,12 +27,24 @@ section.hero {
             transform: rotate(100deg);
             width: 5rem;
             height: 5rem;
+
+            &:hover {
+                scale: 1.1;
+                transform: rotate(110deg);
+                transition: transform 1s;
+            }
         }
 
         img:nth-of-type(2) {
             transform: rotate(-14.5deg);
             width: 4.5rem;
             height: 4.5rem;
+
+            &:hover {
+                scale: 1.1;
+                transform: rotate(-24.5deg);
+                transition: transform 1s;
+            }
         }
     }
 
@@ -44,6 +56,12 @@ section.hero {
             transform: rotate(20deg);
             width: 5.5rem;
             height: 5.5rem;
+
+            &:hover {
+                scale: 1.1;
+                transform: rotate(30deg);
+                transition: transform 1s;
+            }
         }
     }
 
@@ -57,4 +75,8 @@ section.hero {
         font: var(--subtitle) var(--ff-base);
         color: var(--text-body);
     }
+}
+
+@keyframes slideIn {
+
 }

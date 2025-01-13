@@ -57,10 +57,22 @@ html {
     background-size: contain;
     height: 59.25rem;
     width: 100%;
+
+    animation: start 3s linear;
 }
 
 h1 {
     font: var(--title-lg) var(--ff-base);
     color: var(--text-title);
     margin-top: 6.75rem;
+}
+
+@keyframes start {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
