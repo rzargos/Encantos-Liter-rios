@@ -27,6 +27,9 @@ section.hero {
             transform: rotate(100deg);
             width: 5rem;
             height: 5rem;
+            animation: text-appear linear backwards;
+            animation-timeline: view();
+            animation-range: 100px 300px;
 
             &:hover {
                 scale: 1.1;
@@ -39,6 +42,9 @@ section.hero {
             transform: rotate(-14.5deg);
             width: 4.5rem;
             height: 4.5rem;
+            animation: text-appear linear backwards;
+            animation-timeline: view();
+            animation-range: 100px 300px;
 
             &:hover {
                 scale: 1.1;
@@ -56,6 +62,9 @@ section.hero {
             transform: rotate(20deg);
             width: 5.5rem;
             height: 5.5rem;
+            animation: text-appear linear backwards;
+            animation-timeline: view();
+            animation-range: 100px 300px;
 
             &:hover {
                 scale: 1.1;
@@ -74,9 +83,15 @@ section.hero {
     & p {
         font: var(--subtitle) var(--ff-base);
         color: var(--text-body);
+        animation: text-appear linear backwards;
+        animation-timeline: view();
+        animation-range: 100px 300px;
     }
 }
 
-@keyframes slideIn {
-
+@keyframes text-appear {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
 }
