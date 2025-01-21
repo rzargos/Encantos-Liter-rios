@@ -67,6 +67,11 @@ h1 {
     margin-top: 6.75rem;
 }
 
+h2 {
+    font: var(--title-sm) var(--ff-base);
+    color: var(--text-title);
+}
+
 @keyframes start {
     from {
         opacity: 0;

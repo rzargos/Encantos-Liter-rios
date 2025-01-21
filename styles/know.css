@@ -1,0 +1,7 @@
+section.know {
+    padding: 14.6875rem 15.9375rem 18.125rem 15.9375rem;
+
+    & div:nth-child(1) {
+        display: flex;
+    }
+}
