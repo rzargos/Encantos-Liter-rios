@@ -1,7 +1,63 @@
 section.know {
     padding: 14.6875rem 15.9375rem 18.125rem 15.9375rem;
+    height: 99.125rem;
+
+    & p {
+        font: var(--body-md) var(--ff-base);
+        color: var(--text-body);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+    }
 
     & div:nth-child(1) {
         display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+
+        & img {
+            box-shadow: 0px 0px 28px rgba(143, 59, 158, 0.5);
+            border-radius: 100%;
+            transform: matrix(1, 0, 0, -1, 0, 0);
+            width: 2rem;
+            height: 2rem;
+        }
     }
+
+    & div.books {
+        margin-top: 4.125rem;
+        width: 100%;
+        height: 58.125rem;
+
+        position: relative;
+        border: solid 3px red;
+
+        & img {
+            display: none;
+            justify-items: center;
+            margin-inline: auto;
+            position: absolute;
+            border: solid 3px red;
+
+            &:nth-child(2) {
+                display: flex;
+                justify-items: center;
+
+                left: 20%;
+                position: absolute;
+
+                margin-top: 8.375rem;
+
+                &:hover {
+                    img {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+
 }

@@ -21,56 +21,54 @@ section.hero {
 
         img {
             margin: 0;
-        }
 
-        img:nth-of-type(1) {
-            transform: rotate(100deg);
-            width: 5rem;
-            height: 5rem;
-            animation: text-appear linear backwards;
-            animation-timeline: view();
-            animation-range: 100px 300px;
+            &:nth-of-type(1) {
+                transform: rotate(100deg);
+                width: 5rem;
+                height: 5rem;
+                animation: text-appear linear backwards;
+                animation-timeline: view();
+                animation-range: 100px 150px;
 
-            &:hover {
-                scale: 1.1;
-                transform: rotate(110deg);
-                transition: transform 1s;
+                &:hover {
+                    scale: 1.1;
+                    transform: rotate(110deg);
+                    transition: transform 1s;
+                }
             }
-        }
 
-        img:nth-of-type(2) {
-            transform: rotate(-14.5deg);
-            width: 4.5rem;
-            height: 4.5rem;
-            animation: text-appear linear backwards;
-            animation-timeline: view();
-            animation-range: 100px 300px;
+            &:nth-of-type(2) {
+                transform: rotate(-14.5deg);
+                width: 4.5rem;
+                height: 4.5rem;
+                animation: text-appear linear backwards;
+                animation-timeline: view();
+                animation-range: 100px 150px;
 
-            &:hover {
-                scale: 1.1;
-                transform: rotate(-24.5deg);
-                transition: transform 1s;
+                &:hover {
+                    scale: 1.1;
+                    transform: rotate(-24.5deg);
+                    transition: transform 1s;
+                }
             }
         }
     }
 
-    & img {
+    >img {
         display: flex;
 
-        &:nth-of-type(1) {
-            margin-inline: auto;
-            transform: rotate(20deg);
-            width: 5.5rem;
-            height: 5.5rem;
-            animation: text-appear linear backwards;
-            animation-timeline: view();
-            animation-range: 100px 300px;
+        margin-inline: auto;
+        transform: rotate(20deg);
+        width: 5.5rem;
+        height: 5.5rem;
+        animation: text-appear linear backwards;
+        animation-timeline: view();
+        animation-range: 100px 150px;
 
-            &:hover {
-                scale: 1.1;
-                transform: rotate(30deg);
-                transition: transform 1s;
-            }
+        &:hover {
+            scale: 1.1;
+            transform: rotate(30deg);
+            transition: transform 1s;
         }
     }
 
@@ -85,7 +83,7 @@ section.hero {
         color: var(--text-body);
         animation: text-appear linear backwards;
         animation-timeline: view();
-        animation-range: 100px 300px;
+        animation-range: 100px 150px;
     }
 }
 
